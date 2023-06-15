@@ -8,6 +8,9 @@ interface BoardState {
   setBoardState: (board: Board) => void;
   updateTodoInDb: (todo: Todo, columnId: TypedColumn) => void;
 
+  newTaskInput: string;
+  setNewTaskInput: (input: string) => void
+
   searchString: string;
   setSearchString: (searchString: string) => void;
 
@@ -20,15 +23,18 @@ export const useBoardStore = create<BoardState>((set, get) => ({
   },
 
   searchString: "",
+  newTaskInput: "",
 
   setSearchString: (searchString) => set({searchString}),
+
+  setNewTaskInput: (input) => set({ newTaskInput: input }),
 
   getBoard: async () => {
     const board = await getTodosGroupedByColumn()
     set ({board})
   },
 
-  setBoardState: (board) => set ({board}),
+  setBoardState: (board) => set ({ board }),
 
   updateTodoInDb: async (todo, columnId) => {
     await databases.updateDocument(
