@@ -9,3 +9,6 @@ export default function Home() {
     </main>
   )
 }
+
+
+/* DEPLOYED TO VERCEL https://trello-clone-adina-hub.vercel.app */
