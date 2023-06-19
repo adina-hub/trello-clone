@@ -1,34 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Trello 2.0 Clone with React(Next.js 13.4, GPT-4, Drag & Drop, Zustand, Appwrite Cloud, TS)
+
+# Features
+* Task Management: Add, delete, and update tasks across three different status types. This project provides a flexible system for organizing and tracking tasks within the application.
+
+* Drag & Drop: Seamlessly move tasks between different status columns using a drag and drop interface. This intuitive feature enhances productivity and streamlines task management.
+
+* Image Support: Enhance task details by attaching images to individual tasks. This functionality allows users to include relevant visuals and annotations for a more comprehensive task representation.
+
+* GPT-4 Generated Messages: Utilizing the powerful GPT-4 language model, this project integrates a message generation feature that augments the task management process.  
+
+* Search Functionality: Quickly find specific tasks by utilizing the search feature. Search through existing tasks based on task titles.
 
 ## Getting Started
+Follow these steps to set up and run the Trello 2.0 clone on your local machine:
 
-First, run the development server:
+## Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+`git clone <repository-url>`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Install the dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`cd trello-clone`  
+`npm install`
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Configure the Appwrite Cloud integration:
 
-To learn more about Next.js, take a look at the following resources:
+1. Sign up for an account on Appwrite and create a new project.  
+2. Obtain your Appwrite API credentials.  
+3. Update the configuration file (appwrite.config.js) with your Appwrite project details.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`npm run dev`
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open your web browser and visit http://localhost:3000 to access the Trello 2.0 clone.
