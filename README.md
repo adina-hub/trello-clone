@@ -11,28 +11,6 @@
 
 * Search Functionality: Quickly find specific tasks by utilizing the search feature. Search through existing tasks based on task titles.
 
-## Getting Started
-Follow these steps to set up and run the Trello 2.0 clone on your local machine:
 
-## Clone the repository:
+Live app: trello-clone-adina-hub.vercel.app
 
-`git clone <repository-url>`
-
-## Install the dependencies:
-
-`cd trello-clone`  
-`npm install`
-
-
-## Configure the Appwrite Cloud integration:
-
-1. Sign up for an account on Appwrite and create a new project.  
-2. Obtain your Appwrite API credentials.  
-3. Update the configuration file (appwrite.config.js) with your Appwrite project details.  
-
-## Start the development server:
-
-`npm run dev`
-
-
-Open your web browser and visit http://localhost:3000 to access the Trello 2.0 clone.
